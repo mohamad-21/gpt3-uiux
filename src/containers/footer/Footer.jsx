@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
 
       <div className="copyright">
-        <p>© 2021 GPT-3. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} GPT-3. All rights reserved.</p>
       </div>
 
     </footer>
