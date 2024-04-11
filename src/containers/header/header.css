@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header-content .title {
+  min-width: 100%;
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+.header-content .desc {
+  line-height: 27.32px;
+  text-align: left;
+  color: #81AFDD;
+}
+
+.header .subscribe {
+  height: 55px;
+  display: flex;
+}
+
+.header .subscribe input {
+  width: 100%;
+  background-color: #052D56;
+  border: none;
+  outline: none;
+  padding-inline: 1.3rem;
+  font-size: 1rem;
+  color: #3D6184;
+  border-radius: 5px 0 0 5px;
+}
+
+.header .subscribe input::placeholder {
+  color: #3D6184;
+}
+
+.header .subscribe button {
+  background-color: #FF4820;
+  color: white;
+  width: 174px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.header .people {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 12px;
+}
+
+.header .people img {
+  width: 181.79px;
+  height: 38px;
+}
+
+.header .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.header .image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .header .header-content .title {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  
+  .header .header-content .desc {
+    font-size: 12px;
+  }
+
+  .header .subscribe {
+    height: 50px;
+  }
+
+  .header .subscribe input,
+  .header .subscribe button {
+    font-size: 14.5px;
+  }
+
+  .header .people {
+    flex-direction: column;
+  }
+
+}

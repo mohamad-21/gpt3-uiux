@@ -1,0 +1,130 @@
+footer {
+  background-color: #031B34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+footer .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  gap: 2rem;
+}
+
+footer .heading h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+footer .heading button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: .8rem 1rem;
+  color: #fff;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+footer .heading button:hover {
+  background-color: #fff;
+  color: #031B34;
+}
+
+footer .logo-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 4rem;
+}
+
+footer .logo-links .logo {
+  max-width: 150px;
+}
+
+footer .logo-links .logo img {
+  width: 118px;
+  height: 30px;
+}
+
+footer .logo-links .logo p {
+  font-size: 10px;
+  margin-top: 12px;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+footer .links .item {
+  width: 150px;
+}
+
+footer .links h4 {
+  font-size: 13px;
+}
+
+footer .links ul {
+  list-style: none;
+  margin-top: 1rem;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .links ul a {
+  line-height: 17px;
+}
+
+footer .copyright {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 950px) {
+  footer .logo-links {
+    flex-direction: column;
+  }
+
+  footer .links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    row-gap: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  footer .heading {
+    max-width: 500px;
+  }
+
+  footer .logo-links {
+    flex-direction: column;
+  }
+
+  footer .links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    row-gap: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  footer .heading h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer .heading h1 {
+    font-size: 1.4rem;
+  }
+}

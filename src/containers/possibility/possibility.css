@@ -1,0 +1,57 @@
+.psblty {
+  display: flex;
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+.psblty img {
+  width: 100%;
+  height: 100%;
+}
+
+.psblty .image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.psblty .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.psblty .content h6 {
+  color: #71E5FF;
+  font-weight: 500;
+}
+
+.psblty h1 {
+  font-size: 1.75rem;
+}
+
+.psblty .content p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #81AFDD;
+}
+
+.psblty .content a:last-child h6 {
+  color: #FF8A71;
+}
+
+@media screen and (max-width: 900px) {
+  .psblty {
+    flex-direction: column;
+  }
+
+  .psblty h1 {
+    font-size: 1.3rem;
+  }
+
+  .psblty .content p {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,42 @@
+.feature {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.feature.row {
+  flex-direction: row;
+}
+
+.feature.column {
+  flex-direction: column;
+}
+
+.feature .title {
+  flex: 1;
+  max-width: 200px;
+}
+
+.feature .title h3 {
+  font-size: 15px;
+}
+
+.feature .title div {
+  width: 35px;
+  height: 3px;
+  margin-bottom: 10px;
+  background: var(--gradient-text);
+  border-radius: 50px;
+}
+
+.feature .desc {
+  font-size: 12px;
+  line-height: 21px;
+  flex: 2;
+  max-width: 500px;
+  display: flex;
+  color: var(--color-text);
+}

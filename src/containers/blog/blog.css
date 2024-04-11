@@ -1,0 +1,30 @@
+.blog .heading {
+  margin-bottom: 3rem;
+}
+
+.blog .articles-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.blog .articles-container .articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 970px) {
+  .blog .articles-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog .articles-container .articles {
+    grid-template-columns: 1fr;
+  }
+
+  .blog .heading h1 {
+    font-size: 1.4rem;
+  }
+}
