@@ -33,7 +33,7 @@ const articles = [
 
 const Blog = () => {
   return (
-    <div className="blog section-padding">
+    <div className="blog section-padding" id="blog">
       <div className="heading">
         <h1 className="gradient__text">
           A lot is happening, 

@@ -2,20 +2,23 @@ import './navbar.css';
 import logo from '../../assets/logo.svg';
 import { useState } from "react";
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
+import { useLocation } from 'react-router-dom';
 
-const Menu = () => (
+const Menu = ({hash}) => (
   <>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#whatgpt3">What is GPT3</a></li>
-    <li><a href="#possiblity">OpenAI</a></li>
-    <li><a href="#features">Case Studies</a></li>
-    <li><a href="#blog">Library</a></li>
+    <li><a href="#home" className={`${hash === '#home' ? 'active' : ''}`}>Home</a></li>
+    <li><a href="#whatgpt3" className={`${hash === '#whatgpt3' ? 'active' : ''}`}>What is GPT3</a></li>
+    <li><a href="#possibility" className={`${hash === '#possibility' ? 'active' : ''}`}>OpenAI</a></li>
+    <li><a href="#features" className={`${hash === '#features' ? 'active' : ''}`}>Case Studies</a></li>
+    <li><a href="#blog" className={`${hash === '#blog' ? 'active' : ''}`}>Library</a></li>
   </>
 )
 
 const Navbar = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
+  const { hash } = useLocation();
+  console.log(hash);
 
   return (
     <div className="navbar">
@@ -24,11 +27,11 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </div>
         <ul className="nav-links">
-          <Menu />
+          <Menu hash={hash} />
         </ul>
       </div>
       <div className="nav-sign">
-        <span>Sign in</span>
+        <button>Sign in</button>
         <button>Sign up</button>
       </div>
       <div className="nav-menu">
@@ -40,9 +43,9 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="nav-menu-container scale-up-center">
             <div className="nav-menu-links">
-              <Menu />
+              <Menu hash={hash} />
               <div className="nav-menu-links-sign">
-                <span>Sign in</span>
+                <button>Sign in</button>
                 <button>Sign up</button>
               </div>
             </div>

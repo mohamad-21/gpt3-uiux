@@ -33,6 +33,11 @@
   gap: 1.5rem;
 }
 
+.nav-links a.active {
+  color: #FF4820;
+  font-weight: 500;
+}
+
 .nav-sign, .nav-menu-links-sign {
   display: flex;
   justify-content: flex-end;
@@ -40,7 +45,16 @@
   gap: 1rem;
 }
 
-.nav-sign button, .nav-menu-links-sign button {
+.nav-sign button:first-child, .nav-menu-links-sign button:first-child {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-sign button:last-child, .nav-menu-links-sign button:last-child {
   background-color: #FF4820;
   border: none;
   outline: none;
@@ -51,10 +65,19 @@
   font-size: 16px;
 }
 
+.nav-sign button:last-child:hover, .nav-menu-links-sign button:last-child:hover {
+  opacity: .8;
+}
+
 .nav-menu {
   display: none;
   position: relative;
   list-style: none;
+}
+
+.nav-menu a.active {
+  color: #FF4820;
+  font-weight: 500;
 }
 
 .nav-menu svg {

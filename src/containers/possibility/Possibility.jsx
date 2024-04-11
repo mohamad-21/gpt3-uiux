@@ -3,7 +3,7 @@ import possibilityImg from '../../assets/possibility.png';
 
 const Possibility = () => {
   return (
-    <div className="psblty section-padding">
+    <div className="psblty section-padding" id="possibility">
       <div className="image">
         <img src={possibilityImg} alt="possibility" />
       </div>
